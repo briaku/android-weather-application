@@ -38,7 +38,7 @@ import android.widget.AdapterView.OnItemSelectedListener
 
 class MainActivity : FragmentActivity(), OnMapReadyCallback {
     private val stringurlcity="https://api.openweathermap.org/data/2.5/weather?q=" // need to add city
-    private val stringurlzip= "https://api.openweathermap.org/data/2.5/weather?zip="
+    private val stringurlzip= "https://api.openweathermap.org/data/2.5/weather?zip=" // alternative zip code
     private val icondownloadurl= "https://openweathermap.org/img/wn/"
     private val apikey= ",us&APPID=e829494623208fdc55dd4d87cf5778d0"
     private lateinit var binding:ActivityMainBinding
