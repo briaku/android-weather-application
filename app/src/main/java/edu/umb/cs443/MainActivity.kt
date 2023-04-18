@@ -14,6 +14,7 @@ import android.util.Log
 import android.view.View
 import android.view.animation.AnimationUtils
 import android.view.inputmethod.EditorInfo
+import android.widget.AdapterView
 import android.widget.ArrayAdapter
 import android.widget.Toast
 import androidx.fragment.app.FragmentActivity
@@ -35,6 +36,10 @@ import java.io.InputStream
 import java.net.HttpURLConnection
 import java.net.URL
 import android.widget.AdapterView.OnItemSelectedListener
+import androidx.room.Room
+import com.roomdata.myapp.data.MyAppDatabase
+import com.roomdata.myapp.data.User
+
 
 class MainActivity : FragmentActivity(), OnMapReadyCallback {
     private val stringurlcity="https://api.openweathermap.org/data/2.5/weather?q=" // need to add city
@@ -56,12 +61,90 @@ class MainActivity : FragmentActivity(), OnMapReadyCallback {
         binding.editText.inputType= InputType.TYPE_CLASS_TEXT or InputType.TYPE_TEXT_FLAG_NO_SUGGESTIONS
         binding.editText.setSingleLine()
         val spinner= binding.spinner1
+        val database= Room.databaseBuilder( // roomdatabase for the save feature
+            applicationContext,
+            MyAppDatabase::class.java,
+            "my_database"
+        ).build()
 
-        var items = arrayOf("Save" , "weatherData1", "weatherData2")
+        var items = arrayOf("Save" , "weatherData1")
         val adapter = ArrayAdapter<String>(this, R.layout.support_simple_spinner_dropdown_item,items )
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
         spinner.adapter=adapter
         spinner.setBackgroundResource(R.drawable.quantum_ic_keyboard_arrow_down_white_36)
+
+        spinner.onItemSelectedListener = object : AdapterView.OnItemSelectedListener {
+            override fun onItemSelected(parent: AdapterView<*>, view: View?, position: Int, id: Long) {
+                val selectedItem = parent.getItemAtPosition(position) as String
+                when(selectedItem){
+                    "Save" -> {
+                        // Do something when "Save" is selected
+                        CoroutineScope(Dispatchers.IO).launch {
+                            val dao= database.myDao()
+                            val userList = dao.getAllObjects()
+                            val tempflag= binding.textView.text.toString() // if there is not data displayed yet
+
+                            if (userList.size !=0 && tempflag!= "0°F") { // if there is something already in the db
+                                val feeltemp=binding.feelslikeinfo.text.toString()
+                                val description= binding.weatherdescription.text.toString()
+                                val wind= binding.windspeed.text.toString()
+
+                                val user= User(0, tempflag, feeltemp,description,wind)
+                                dao.updateUsers(user)
+                            }
+                            else if (tempflag!= "0°F") {
+                                val feeltemp=binding.feelslikeinfo.text.toString()
+                                val description= binding.weatherdescription.text.toString()
+                                val wind= binding.windspeed.text.toString()
+
+                                val user= User(0, tempflag, feeltemp,description,wind)
+                                dao.insertObject(user)
+                            }
+
+
+
+
+
+                        }
+
+
+
+                    }
+                    "weatherData1" -> {
+                        // Do something when "weatherData1" is selected
+                        CoroutineScope(Dispatchers.IO).launch {
+                            val dao = database.myDao()
+                            val userList = dao.getAllObjects()
+                            for (user in  userList) {
+                                withContext(Dispatchers.Main) {
+                                    binding.textView.setText(" ${user.temperature}")
+                                    binding.feelslikeinfo.setText(" ${user.feeltemp}")
+                                    binding.weatherdescription.setText("${user.description}")
+                                    binding.windspeed.setText("${user.windspeed}")
+                                }
+                                Log.d("MyApp", "ID: ${user.id}")
+                                Log.d("MyApp", "Temperature: ${user.temperature}")
+                                Log.d("MyApp", "Feeltemp: ${user.feeltemp}")
+                                Log.d("MyApp", "Description: ${user.description}")
+                                Log.d("MyApp", "Windspeed: ${user.windspeed}")
+                            }
+
+
+
+
+                        }
+                    }
+                    else -> {
+                        // Handle other cases
+                        Log.d("nothing", "nothing")
+                    }
+                }
+            }
+
+            override fun onNothingSelected(parent: AdapterView<*>) {
+                // Handle when nothing is selected
+            }
+        }
 
 
     }

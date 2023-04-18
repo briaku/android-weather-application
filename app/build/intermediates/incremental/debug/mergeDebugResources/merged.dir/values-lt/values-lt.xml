@@ -107,6 +107,8 @@
     <string msgid="691656961160498512" name="mr_controller_volume_slider">"Garsumo šliaužiklis"</string>
     <string msgid="3117964881088969586" name="mr_system_route_name">"Sistema"</string>
     <string msgid="8236416097133080726" name="mr_user_route_category_name">"Įrenginiai"</string>
+    <string msgid="6301633601645100427" name="nav_app_bar_navigate_up_description">"Naršyti aukštyn"</string>
+    <string msgid="7456070600745802113" name="nav_app_bar_open_drawer_description">"Atidaryti naršymo juostą"</string>
     <string msgid="1303870564366209730" name="place_autocomplete_clear_button">"Išvalyti paiešką"</string>
     <string msgid="2809095107724486040" name="place_autocomplete_search_hint">"Paieška"</string>
     <string msgid="368094699078615544" name="s1">"Išsaugoti vaizdą"</string>

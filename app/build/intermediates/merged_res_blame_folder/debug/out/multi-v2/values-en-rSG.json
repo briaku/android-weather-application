@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "edu.umb.cs443.app-mergeDebugResources-50:/values-en-rSG/values-en-rSG.xml",
+            "outputFile": "edu.umb.cs443.app-mergeDebugResources-56:/values-en-rSG/values-en-rSG.xml",
             "map": [
                 {
                     "source": "C:\\Users\\briak\\.gradle\\caches\\transforms-3\\8bb40f645fec47017feac558d4569faf\\transformed\\jetified-play-services-wallet-12.0.1\\res\\values-en-rSG\\values.xml",

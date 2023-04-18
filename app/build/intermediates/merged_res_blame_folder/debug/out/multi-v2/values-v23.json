@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "edu.umb.cs443.app-mergeDebugResources-50:/values-v23/values-v23.xml",
+            "outputFile": "edu.umb.cs443.app-mergeDebugResources-56:/values-v23/values-v23.xml",
             "map": [
                 {
                     "source": "C:\\Users\\briak\\.gradle\\caches\\transforms-3\\aad2194ed24ffb43f6336f9a20221d13\\transformed\\cardview-1.0.0\\res\\values-v23\\values-v23.xml",

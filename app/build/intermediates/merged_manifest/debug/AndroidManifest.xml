@@ -211,6 +211,12 @@
             android:authorities="edu.umb.cs443.firebaseinitprovider"
             android:exported="false"
             android:initOrder="100" />
+
+        <service
+            android:name="androidx.room.MultiInstanceInvalidationService"
+            android:directBootAware="true"
+            android:exported="false" />
+
         <provider
             android:name="androidx.startup.InitializationProvider"
             android:authorities="edu.umb.cs443.androidx-startup"

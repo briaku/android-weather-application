@@ -386,21 +386,31 @@
 212-->[com.google.firebase:firebase-common:12.0.1] C:\Users\briak\.gradle\caches\transforms-3\3687c30b674181f6beb86136aa1f881d\transformed\jetified-firebase-common-12.0.1\AndroidManifest.xml:11:13-37
 213            android:initOrder="100" />
 213-->[com.google.firebase:firebase-common:12.0.1] C:\Users\briak\.gradle\caches\transforms-3\3687c30b674181f6beb86136aa1f881d\transformed\jetified-firebase-common-12.0.1\AndroidManifest.xml:12:13-36
-214        <provider
-214-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\briak\.gradle\caches\transforms-3\88a363bc2c6e02da7cb12d53dab50ef1\transformed\jetified-lifecycle-process-2.4.0\AndroidManifest.xml:26:9-34:20
-215            android:name="androidx.startup.InitializationProvider"
-215-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\briak\.gradle\caches\transforms-3\88a363bc2c6e02da7cb12d53dab50ef1\transformed\jetified-lifecycle-process-2.4.0\AndroidManifest.xml:27:13-67
-216            android:authorities="edu.umb.cs443.androidx-startup"
-216-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\briak\.gradle\caches\transforms-3\88a363bc2c6e02da7cb12d53dab50ef1\transformed\jetified-lifecycle-process-2.4.0\AndroidManifest.xml:28:13-68
-217            android:exported="false" >
-217-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\briak\.gradle\caches\transforms-3\88a363bc2c6e02da7cb12d53dab50ef1\transformed\jetified-lifecycle-process-2.4.0\AndroidManifest.xml:29:13-37
-218            <meta-data
-218-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\briak\.gradle\caches\transforms-3\88a363bc2c6e02da7cb12d53dab50ef1\transformed\jetified-lifecycle-process-2.4.0\AndroidManifest.xml:31:13-33:52
-219                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
-219-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\briak\.gradle\caches\transforms-3\88a363bc2c6e02da7cb12d53dab50ef1\transformed\jetified-lifecycle-process-2.4.0\AndroidManifest.xml:32:17-78
-220                android:value="androidx.startup" />
-220-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\briak\.gradle\caches\transforms-3\88a363bc2c6e02da7cb12d53dab50ef1\transformed\jetified-lifecycle-process-2.4.0\AndroidManifest.xml:33:17-49
-221        </provider>
-222    </application>
-223
-224</manifest>
+214
+215        <service
+215-->[androidx.room:room-runtime:2.2.5] C:\Users\briak\.gradle\caches\transforms-3\167105bae1b9f2e3e5ccc28c5d1ba27e\transformed\room-runtime-2.2.5\AndroidManifest.xml:25:9-28:40
+216            android:name="androidx.room.MultiInstanceInvalidationService"
+216-->[androidx.room:room-runtime:2.2.5] C:\Users\briak\.gradle\caches\transforms-3\167105bae1b9f2e3e5ccc28c5d1ba27e\transformed\room-runtime-2.2.5\AndroidManifest.xml:26:13-74
+217            android:directBootAware="true"
+217-->[androidx.room:room-runtime:2.2.5] C:\Users\briak\.gradle\caches\transforms-3\167105bae1b9f2e3e5ccc28c5d1ba27e\transformed\room-runtime-2.2.5\AndroidManifest.xml:27:13-43
+218            android:exported="false" />
+218-->[androidx.room:room-runtime:2.2.5] C:\Users\briak\.gradle\caches\transforms-3\167105bae1b9f2e3e5ccc28c5d1ba27e\transformed\room-runtime-2.2.5\AndroidManifest.xml:28:13-37
+219
+220        <provider
+220-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\briak\.gradle\caches\transforms-3\88a363bc2c6e02da7cb12d53dab50ef1\transformed\jetified-lifecycle-process-2.4.0\AndroidManifest.xml:26:9-34:20
+221            android:name="androidx.startup.InitializationProvider"
+221-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\briak\.gradle\caches\transforms-3\88a363bc2c6e02da7cb12d53dab50ef1\transformed\jetified-lifecycle-process-2.4.0\AndroidManifest.xml:27:13-67
+222            android:authorities="edu.umb.cs443.androidx-startup"
+222-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\briak\.gradle\caches\transforms-3\88a363bc2c6e02da7cb12d53dab50ef1\transformed\jetified-lifecycle-process-2.4.0\AndroidManifest.xml:28:13-68
+223            android:exported="false" >
+223-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\briak\.gradle\caches\transforms-3\88a363bc2c6e02da7cb12d53dab50ef1\transformed\jetified-lifecycle-process-2.4.0\AndroidManifest.xml:29:13-37
+224            <meta-data
+224-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\briak\.gradle\caches\transforms-3\88a363bc2c6e02da7cb12d53dab50ef1\transformed\jetified-lifecycle-process-2.4.0\AndroidManifest.xml:31:13-33:52
+225                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+225-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\briak\.gradle\caches\transforms-3\88a363bc2c6e02da7cb12d53dab50ef1\transformed\jetified-lifecycle-process-2.4.0\AndroidManifest.xml:32:17-78
+226                android:value="androidx.startup" />
+226-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\briak\.gradle\caches\transforms-3\88a363bc2c6e02da7cb12d53dab50ef1\transformed\jetified-lifecycle-process-2.4.0\AndroidManifest.xml:33:17-49
+227        </provider>
+228    </application>
+229
+230</manifest>

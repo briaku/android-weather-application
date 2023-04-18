@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "edu.umb.cs443.app-mergeDebugResources-50:/values-ldltr-v21/values-ldltr-v21.xml",
+            "outputFile": "edu.umb.cs443.app-mergeDebugResources-56:/values-ldltr-v21/values-ldltr-v21.xml",
             "map": [
                 {
                     "source": "C:\\Users\\briak\\.gradle\\caches\\transforms-3\\5ec1dac20bba3c02315935eb98e68478\\transformed\\appcompat-1.2.0\\res\\values-ldltr-v21\\values-ldltr-v21.xml",

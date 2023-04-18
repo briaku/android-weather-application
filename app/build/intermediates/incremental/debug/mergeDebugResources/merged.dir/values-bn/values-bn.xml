@@ -107,6 +107,8 @@
     <string msgid="691656961160498512" name="mr_controller_volume_slider">"ভলিউম স্লাইডার"</string>
     <string msgid="3117964881088969586" name="mr_system_route_name">"সিস্টেম"</string>
     <string msgid="8236416097133080726" name="mr_user_route_category_name">"ডিভাইস"</string>
+    <string msgid="6301633601645100427" name="nav_app_bar_navigate_up_description">"উপরে নেভিগেট করুন"</string>
+    <string msgid="7456070600745802113" name="nav_app_bar_open_drawer_description">"নেভিগেশন ড্রয়ার খুলুন"</string>
     <string msgid="1303870564366209730" name="place_autocomplete_clear_button">"অনুসন্ধান সাফ করুন"</string>
     <string msgid="2809095107724486040" name="place_autocomplete_search_hint">"খুঁজুন"</string>
     <string msgid="368094699078615544" name="s1">"ছবি সেভ করুন"</string>

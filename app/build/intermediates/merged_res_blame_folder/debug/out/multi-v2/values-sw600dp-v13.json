@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "edu.umb.cs443.app-mergeDebugResources-50:/values-sw600dp-v13/values-sw600dp-v13.xml",
+            "outputFile": "edu.umb.cs443.app-mergeDebugResources-56:/values-sw600dp-v13/values-sw600dp-v13.xml",
             "map": [
                 {
                     "source": "C:\\Users\\briak\\.gradle\\caches\\transforms-3\\20c2a60a661ce8a98c876be3f1dab5db\\transformed\\mediarouter-1.0.0-alpha5\\res\\values-sw600dp-v13\\values-sw600dp-v13.xml",
@@ -13,11 +13,30 @@
                         "endOffsets": "119,188"
                     },
                     "to": {
-                        "startLines": "10,11",
+                        "startLines": "19,20",
                         "startColumns": "4,4",
-                        "startOffsets": "611,680",
+                        "startOffsets": "1173,1242",
                         "endColumns": "68,68",
-                        "endOffsets": "675,744"
+                        "endOffsets": "1237,1306"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\briak\\.gradle\\caches\\transforms-3\\eedfbd11ba64a1fa9823d32315e6b79b\\transformed\\material-1.0.0\\res\\values-sw600dp-v13\\values-sw600dp-v13.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7,8,10,11,12",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,115,185,256,328,386,444,553,617,680",
+                        "endLines": "2,3,4,5,6,7,9,10,11,15",
+                        "endColumns": "59,69,70,71,57,57,10,63,62,10",
+                        "endOffsets": "110,180,251,323,381,439,548,612,675,847"
+                    },
+                    "to": {
+                        "startLines": "10,11,12,13,14,15,16,18,21,22",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "611,671,741,812,884,942,1000,1109,1311,1374",
+                        "endLines": "10,11,12,13,14,15,17,18,21,25",
+                        "endColumns": "59,69,70,71,57,57,10,63,62,10",
+                        "endOffsets": "666,736,807,879,937,995,1104,1168,1369,1541"
                     }
                 },
                 {

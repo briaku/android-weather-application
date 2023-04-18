@@ -107,6 +107,8 @@
     <string msgid="691656961160498512" name="mr_controller_volume_slider">"音量滑块"</string>
     <string msgid="3117964881088969586" name="mr_system_route_name">"系统"</string>
     <string msgid="8236416097133080726" name="mr_user_route_category_name">"设备"</string>
+    <string msgid="6301633601645100427" name="nav_app_bar_navigate_up_description">"转到上一层级"</string>
+    <string msgid="7456070600745802113" name="nav_app_bar_open_drawer_description">"打开抽屉式导航栏"</string>
     <string msgid="1303870564366209730" name="place_autocomplete_clear_button">"清除搜索内容"</string>
     <string msgid="2809095107724486040" name="place_autocomplete_search_hint">"搜索"</string>
     <string msgid="368094699078615544" name="s1">"保存图片"</string>

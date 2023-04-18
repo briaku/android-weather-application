@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "edu.umb.cs443.app-mergeDebugResources-50:/values-sw720dp-v13/values-sw720dp-v13.xml",
+            "outputFile": "edu.umb.cs443.app-mergeDebugResources-56:/values-sw720dp-v13/values-sw720dp-v13.xml",
             "map": [
                 {
                     "source": "C:\\Users\\briak\\.gradle\\caches\\transforms-3\\20c2a60a661ce8a98c876be3f1dab5db\\transformed\\mediarouter-1.0.0-alpha5\\res\\values-sw720dp-v13\\values-sw720dp-v13.xml",
